@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-bg-deep: #0a0a0a;
+  --color-bg-card: #141414;
+  --color-border-dim: #2a2a2a;
+  --color-text-main: #e0e0e0;
+  --color-text-dim: #888888;
+  --color-accent-gold: #d4af37;
+  --color-accent-glow: rgba(212, 175, 55, 0.15);
+  
+  --font-serif: "Georgia", serif;
+  --font-sans: "Inter", "Helvetica Neue", Arial, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-bg-deep text-text-main font-sans antialiased;
+  }
+
+  h1, h2, h3 {
+    @apply font-serif italic font-normal;
+  }
+}
+
+/* Custom styles mapping to the requested theme */
+.sidebar-border {
+  border-right: 1px solid var(--color-border-dim);
+}
+
+.bottom-border {
+  border-bottom: 1px solid var(--color-border-dim);
+}
+
+.top-border {
+  border-top: 1px solid var(--color-border-dim);
+}
+
+.accent-glow {
+  box-shadow: 0 0 20px var(--color-accent-glow);
+}

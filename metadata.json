@@ -1,0 +1,6 @@
+{
+  "name": "Petrolimex Invoice Scanner & Renamer",
+  "description": "Scan Petrolimex invoice PDFs and bulk rename them to 'yyyymmdd sohoadon kyhieu' format using AI OCR.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
